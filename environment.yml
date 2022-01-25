@@ -1,0 +1,17 @@
+name: mindset
+dependencies:
+  - python
+  - pip:
+    - brainflow
+    - pylsl
+    - pyxdf
+    - numpy
+    - mne
+    - matplotlib
+    - scipy
+    - PyQt5
+    - joblib
+    - notebook
+    - sklearn
+    - pyriemann
+    - seaborn
