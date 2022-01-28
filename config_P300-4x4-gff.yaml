@@ -1,0 +1,58 @@
+# ==== config_MI-hands.yml ====
+
+# Files
+subject: P00J
+session: 1
+task: P300_4x4_gff
+
+# LSL Stream
+eeg_stream_type: EXG
+markers_stream_type: Marker
+default_ch_names:
+  - Fz
+  - FC1
+  - FC2
+  - C3
+  - Cz
+  - C4
+  - CP1
+  - CP2
+  - P3
+  - Pz
+  - P4
+  - PO3
+  - PO4
+  - O1
+  - Oz
+  - O2
+montage_file: openbci_montage.elc
+
+# Events
+event_dict:
+  nontarget: 0
+  target: 1
+task_duration: 1
+tmin: -0.2
+tmax: 0.8
+
+# Plot
+plotGraphs: false
+scalings:
+  eeg: 200.e-6
+plot_duration: 10
+
+# Bandpass filter
+bp_l_freq: 1.
+bp_h_freq: 40.
+
+# ICA
+performICA: false
+
+# Features
+features: time
+# features: psd
+# features: tfr
+tfr_type: morlet
+baseline: !!python/tuple [0.,0.1]
+vmin: -1.
+vmax: 1.
