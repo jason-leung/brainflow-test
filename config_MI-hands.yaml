@@ -33,8 +33,10 @@ event_dict:
   MI/hands: 1
 rest_duration: 5
 task_duration: 5
-tmin: 0
-tmax: 5
+tmin: 0.
+tmax: 5.
+window_size: 1.
+window_overlap: 0.
 
 # Plot
 plotGraphs: false
@@ -51,8 +53,9 @@ performICA: false
 
 # Features
 # features: time
+features: csp
 # features: psd
-features: tfr
+# features: tfr
 tfr_type: morlet
 baseline: !!python/tuple [0.,0.1]
 vmin: -1.
