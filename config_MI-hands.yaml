@@ -2,8 +2,8 @@
 
 # Files
 subject: P00J
-session: 1
-task: MI-hands
+session: 2
+task: MI-push
 
 # LSL Stream
 eeg_stream_type: EXG
@@ -30,12 +30,12 @@ montage_file: openbci_montage.elc
 # Events
 event_dict:
   rest: 0
-  MI/hands: 1
-rest_duration: 5
-task_duration: 5
+  MI/push: 1
+rest_duration: 8
+task_duration: 8
 tmin: 0.
-tmax: 5.
-window_size: 1.
+tmax: 8.
+window_size: 8.
 window_overlap: 0.
 
 # Plot
@@ -53,8 +53,8 @@ performICA: false
 
 # Features
 # features: time
-features: csp
-# features: psd
+# features: csp
+features: psd
 # features: tfr
 tfr_type: morlet
 baseline: !!python/tuple [0.,0.1]

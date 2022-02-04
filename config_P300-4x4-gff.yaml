@@ -34,6 +34,8 @@ event_dict:
 task_duration: 1
 tmin: -0.2
 tmax: 0.8
+window_size: 1.
+window_overlap: 0.
 
 # Plot
 plotGraphs: false
